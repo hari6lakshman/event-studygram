@@ -17,7 +17,7 @@ const cinzel = Cinzel({
 });
 
 export const metadata: Metadata = {
-  title: 'EventHub - Find Your Next Hackathon',
+  title: 'Event Hub - Studygram',
   description: 'A platform to discover and register for exciting hackathons and tech events.',
 };
 

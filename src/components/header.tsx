@@ -8,7 +8,7 @@ export function Header() {
       <div className="container flex h-14 items-center">
         <Link href="/" className="mr-6 flex items-center space-x-2">
           <CodeXml className="h-6 w-6 text-primary" />
-          <span className="font-headline font-bold text-lg">EventHub</span>
+          <span className="font-headline font-bold text-lg">Event Hub - Studygram</span>
         </Link>
         <nav className="flex items-center gap-6 text-sm">
           <Link href="/events" className="transition-colors hover:text-foreground/80 text-foreground/80 font-medium">
