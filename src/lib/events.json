@@ -2,15 +2,15 @@
 [
   {
     "id": "1",
-    "title": "Hackathon 360",
-    "date": "November 1-3, 2024",
-    "location": "Virtual",
-    "description": "A 360-degree hackathon experience covering all aspects of modern development, from frontend to backend to DevOps.",
-    "longDescription": "Hackathon 360 is an all-encompassing event for developers, designers, and tech enthusiasts. You'll work in teams to build a complete project from scratch, tackling challenges across the full technology stack. We provide the mentors and resources; you bring the ideas and energy.",
+    "title": "National Level Hackathon 360 2.0",
+    "date": "October 2025",
+    "location": "St. Joseph's College of Engineering, Chennai",
+    "description": "A 24-hour national-level hackathon as part of the Jet'25 technical symposium. A platform for students to showcase their innovative ideas.",
+    "longDescription": "Participate in Hackathon 360 2.0, a premier 24-hour national-level coding competition hosted by St. Joseph's College of Engineering, Chennai. As a key event of the Jet'25 technical symposium, this hackathon invites students from across the country to solve real-world problems, innovate, and showcase their technical prowess. It's an opportunity to collaborate, learn from peers, and win exciting prizes.",
     "imageUrl": "",
     "imageHint": "coding collaboration",
-    "organizerId": "1",
-    "tags": ["Full-Stack", "Virtual", "Beginner-Friendly"]
+    "organizerId": "2",
+    "tags": ["Hackathon", "National Level", "In-Person", "24-Hour"]
   },
   {
     "id": "2",
