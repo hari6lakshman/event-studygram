@@ -12,12 +12,12 @@ const ORGANIZER_ID = "1";
 
 export default function OrganizerDashboardPage() {
   const [isCreatingEvent, setIsCreatingEvent] = useState(false);
-  // We use a state to manage the events list, initialized with the static data.
-  // This will allow us to add new events to it.
-  const [events, setEvents] = useState<Event[]>(initialEvents);
+  // We use a state here just to trigger re-renders on this page when an event is added.
+  // The actual source of truth will be the `initialEvents` array we import.
+  const [, setForceRender] = useState(0);
 
-  // We derive the organizer's events from the main events state.
-  const organizerEvents = events.filter(event => event.organizerId === ORGANIZER_ID);
+  // We will now always derive the organizer's events directly from the main `initialEvents` list.
+  const organizerEvents = initialEvents.filter(event => event.organizerId === ORGANIZER_ID);
 
   const handleEventCreated = (newEventData: NewEventType) => {
     const newEvent: Event = {
@@ -25,17 +25,16 @@ export default function OrganizerDashboardPage() {
       id: (initialEvents.length + 1 + Math.random()).toString(), 
       ...newEventData,
       tags: newEventData.tags.split(',').map(tag => tag.trim()),
-      // A default image for newly created events
       organizerId: ORGANIZER_ID,
       longDescription: newEventData.longDescription,
     };
-    // By updating the state here, any component that uses `events` will re-render.
-    // However, this state is not persisted across page reloads.
-    // For a real app, we would write this to a database.
-    const updatedEvents = [newEvent, ...events];
-    setEvents(updatedEvents);
-    initialEvents.unshift(newEvent); // This is a temporary solution for this prototype
     
+    // This is the key change: we directly modify the imported array.
+    // This makes the new event available to all other pages that import it.
+    initialEvents.unshift(newEvent);
+    
+    // We trigger a re-render for this component to show the new event in the list below.
+    setForceRender(Math.random());
     setIsCreatingEvent(false);
   }
 
