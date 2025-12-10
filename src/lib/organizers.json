@@ -1,0 +1,13 @@
+
+[
+    {
+        "id": "1",
+        "email": "admin@example.com",
+        "password": "password"
+    },
+    {
+        "id": "2",
+        "email": "organizer@example.com",
+        "password": "password"
+    }
+]

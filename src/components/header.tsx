@@ -11,19 +11,23 @@ export function Header() {
           <span className="font-bold">EventHub</span>
         </Link>
         <nav className="flex items-center gap-6 text-sm">
-          <Link href="#" className="transition-colors hover:text-foreground/80 text-foreground/60">
-            Hackathons
-          </Link>
-          <Link href="#" className="transition-colors hover:text-foreground/80 text-foreground/60">
+          <Link href="/events" className="transition-colors hover:text-foreground/80 text-foreground/60">
             Events
           </Link>
           <Link href="#" className="transition-colors hover:text-foreground/80 text-foreground/60">
             About
           </Link>
+          <Link href="#" className="transition-colors hover:text-foreground/80 text-foreground/60">
+            Contact
+          </Link>
         </nav>
         <div className="flex flex-1 items-center justify-end gap-2">
-          <Button variant="ghost">Log In</Button>
-          <Button>Sign Up</Button>
+          <Button variant="ghost" asChild>
+            <Link href="/organizer/login">Organizer Login</Link>
+          </Button>
+          <Button asChild>
+            <Link href="/organizer/signup">Organizer Sign Up</Link>
+          </Button>
         </div>
       </div>
     </header>

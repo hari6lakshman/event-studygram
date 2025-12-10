@@ -5,12 +5,13 @@ import { PlaceHolderImages } from '@/lib/placeholder-images';
 import Link from 'next/link';
 import { Badge } from '@/components/ui/badge';
 import { ArrowRight } from 'lucide-react';
+import { events } from '@/lib/events';
 
-const featuredEvents = PlaceHolderImages.slice(0, 3);
+const featuredEvents = events.slice(0, 3);
 
 export default function Home() {
   return (
-    <div className="flex flex-col min-h-screen">
+    <div className="flex flex-col">
       <section className="relative w-full h-[60vh] md:h-[70vh] flex items-center justify-center text-center">
         <Image
           src="https://picsum.photos/seed/hero/1800/1200"
@@ -46,7 +47,7 @@ export default function Home() {
                 <CardHeader className="p-0">
                   <Image
                     src={event.imageUrl}
-                    alt={event.description}
+                    alt={event.title}
                     width={600}
                     height={400}
                     className="w-full h-48 object-cover"
@@ -54,15 +55,16 @@ export default function Home() {
                   />
                 </CardHeader>
                 <CardContent className="p-6 flex-1">
-                  <CardTitle className="text-xl mb-2">{event.description}</CardTitle>
+                  <CardTitle className="text-xl mb-2">{event.title}</CardTitle>
+                  <p className='text-sm text-muted-foreground'>{event.date}</p>
+                  <p className='text-sm text-muted-foreground mb-2'>{event.location}</p>
                   <div className="flex gap-2 mt-2">
-                    <Badge variant="secondary">Online</Badge>
-                    <Badge variant="secondary">Free</Badge>
+                    {event.tags.map(tag => <Badge key={tag} variant="secondary">{tag}</Badge>)}
                   </div>
                 </CardContent>
                 <CardFooter className="p-6 pt-0">
                   <Button asChild className="w-full">
-                    <Link href="#">View Details</Link>
+                    <Link href={`/events/${event.id}`}>View Details</Link>
                   </Button>
                 </CardFooter>
               </Card>

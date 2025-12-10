@@ -1,0 +1,75 @@
+
+[
+  {
+    "id": "1",
+    "title": "Global AI Hackathon 2024",
+    "date": "October 26-28, 2024",
+    "location": "Virtual",
+    "description": "Join thousands of developers, data scientists, and innovators to build the next generation of AI applications.",
+    "longDescription": "This is the world's largest AI hackathon, bringing together the brightest minds to solve real-world problems using artificial intelligence. Participants will have access to exclusive workshops, mentorship from industry experts, and cutting-edge tools and platforms. Whether you're a seasoned pro or just starting, this is your chance to learn, build, and network.",
+    "imageUrl": "https://picsum.photos/seed/event1/600/400",
+    "imageHint": "artificial intelligence code",
+    "organizerId": "1",
+    "tags": ["AI", "Virtual", "Competition"]
+  },
+  {
+    "id": "2",
+    "title": "Web3 & Blockchain Summit",
+    "date": "November 15, 2024",
+    "location": "New York, NY",
+    "description": "A one-day conference exploring the future of decentralized technologies and their impact on various industries.",
+    "longDescription": "Dive deep into the world of Web3, blockchain, and cryptocurrencies. Our speakers include the founders of leading protocols, venture capitalists, and policy makers. Topics will cover DeFi, NFTs, DAOs, and the legal landscape of digital assets. This summit is perfect for developers, investors, and entrepreneurs looking to understand the future of the internet.",
+    "imageUrl": "https://picsum.photos/seed/event2/600/400",
+    "imageHint": "blockchain technology network",
+    "organizerId": "1",
+    "tags": ["Web3", "Blockchain", "In-Person"]
+  },
+  {
+    "id": "3",
+    "title": "Future of Gaming Expo",
+    "date": "December 5-7, 2024",
+    "location": "Los Angeles, CA",
+    "description": "Discover the latest trends in game development, from hyper-realistic graphics to immersive VR experiences.",
+    "longDescription": "The Future of Gaming Expo is the premier event for game developers, designers, and enthusiasts. Get hands-on with the latest hardware, attend panels on game design and storytelling, and network with top studios. A game jam will run throughout the expo, with prizes for the most innovative creations.",
+    "imageUrl": "https://picsum.photos/seed/event3/600/400",
+    "imageHint": "futuristic video game",
+    "organizerId": "2",
+    "tags": ["Gaming", "VR/AR", "In-Person", "Expo"]
+  },
+  {
+    "id": "4",
+    "title": "Cloud Native Conf",
+    "date": "September 10, 2024",
+    "location": "Virtual",
+    "description": "Learn how to build and manage scalable applications in modern, dynamic environments.",
+    "longDescription": "Cloud Native Conf is for architects, developers, and practitioners who build and run applications on cloud native platforms like Kubernetes. We'll cover topics like microservices, container orchestration, service mesh, and observability. This is a technical conference designed to help you adopt and master cloud native technologies.",
+    "imageUrl": "https://picsum.photos/seed/event4/600/400",
+    "imageHint": "cloud infrastructure",
+    "organizerId": "2",
+    "tags": ["Cloud", "DevOps", "Virtual"]
+  },
+  {
+    "id": "5",
+    "title": "Data Science Symposium",
+    "date": "November 2, 2024",
+    "location": "Chicago, IL",
+    "description": "A meeting of minds in data science, machine learning, and analytics.",
+    "longDescription": "The Data Science Symposium features talks from leading researchers and practitioners in the field. Tracks include Natural Language Processing, Computer Vision, Reinforcement Learning, and Ethical AI. This is a great opportunity to learn about the state-of-the-art in data science and connect with fellow professionals.",
+    "imageUrl": "https://picsum.photos/seed/event5/600/400",
+    "imageHint": "data visualization dashboard",
+    "organizerId": "1",
+    "tags": ["Data Science", "ML", "In-Person"]
+  },
+  {
+    "id": "6",
+    "title": "Cybersecurity Challenge",
+    "date": "October 1-3, 2024",
+    "location": "Virtual",
+    "description": "A capture-the-flag competition for cybersecurity professionals and enthusiasts.",
+    "longDescription": "Test your skills in our annual Cybersecurity Challenge. This CTF event features challenges in web security, reverse engineering, cryptography, and forensics. Compete individually or as a team for prizes and bragging rights. All skill levels are welcome, with challenges ranging from easy to expert.",
+    "imageUrl": "https://picsum.photos/seed/event6/600/400",
+    "imageHint": "hacker computer screen",
+    "organizerId": "2",
+    "tags": ["Cybersecurity", "CTF", "Virtual"]
+  }
+]
