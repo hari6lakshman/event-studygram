@@ -23,7 +23,7 @@ export default function EventDetailsPage({ params }: { params: { id: string } })
           </Link>
         </Button>
 
-        <div className="bg-card rounded-lg shadow-lg overflow-hidden border-primary/40">
+        <div className="bg-card rounded-lg shadow-lg overflow-hidden border-2 border-primary/40">
           <Image
             src={event.imageUrl}
             alt={event.title}

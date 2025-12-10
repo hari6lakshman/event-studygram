@@ -28,7 +28,7 @@ export default function OrganizerDashboardPage() {
       {isCreatingEvent ? (
         <CreateEventForm onFinished={() => setIsCreatingEvent(false)} />
       ) : (
-        <Card>
+        <Card className="border-2 border-primary/40">
           <CardHeader>
             <CardTitle>Your Events</CardTitle>
             <CardDescription>Here are the events you've created.</CardDescription>
@@ -36,7 +36,7 @@ export default function OrganizerDashboardPage() {
           <CardContent className="space-y-6">
             {organizerEvents.length > 0 ? (
               organizerEvents.map(event => (
-                <div key={event.id} className="flex items-center gap-4 p-4 border rounded-lg">
+                <div key={event.id} className="flex items-center gap-4 p-4 border-2 border-primary/40 rounded-lg">
                   <Image 
                     src={event.imageUrl}
                     alt={event.title}
