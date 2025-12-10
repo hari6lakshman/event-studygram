@@ -5,7 +5,6 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { CreateEventForm, NewEventType } from "@/components/create-event-form";
 import { events as initialEvents, Event } from "@/lib/events";
 import { PlusCircle } from "lucide-react";
-import Image from "next/image";
 import { Badge } from "@/components/ui/badge";
 
 // For now, we'll assume organizer with ID "1" is logged in.
@@ -55,14 +54,6 @@ export default function OrganizerDashboardPage() {
             {organizerEvents.length > 0 ? (
               organizerEvents.map(event => (
                 <div key={event.id} className="flex items-center gap-4 p-4 border-4 border-primary rounded-lg">
-                  <Image 
-                    src={event.imageUrl}
-                    alt={event.title}
-                    width={150}
-                    height={100}
-                    className="rounded-md object-cover"
-                    data-ai-hint={event.imageHint}
-                  />
                   <div className="flex-1">
                     <h3 className="text-lg font-semibold">{event.title}</h3>
                     <p className="text-sm text-muted-foreground">{event.date} &bull; {event.location}</p>
