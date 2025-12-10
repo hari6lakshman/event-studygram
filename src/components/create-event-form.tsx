@@ -28,11 +28,14 @@ const formSchema = z.object({
   tags: z.string().min(1, "Please add at least one tag."),
 });
 
+export type NewEventType = z.infer<typeof formSchema>;
+
 type CreateEventFormProps = {
   onFinished: () => void;
+  onEventCreated: (data: NewEventType) => void;
 }
 
-export function CreateEventForm({ onFinished }: CreateEventFormProps) {
+export function CreateEventForm({ onFinished, onEventCreated }: CreateEventFormProps) {
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
     defaultValues: {
@@ -46,16 +49,12 @@ export function CreateEventForm({ onFinished }: CreateEventFormProps) {
   })
 
   function onSubmit(values: z.infer<typeof formSchema>) {
-    // In a real app, you'd send this to your server.
-    // For now, we'll just log it and show a success message.
-    console.log("New event data:", values);
+    onEventCreated(values);
 
     toast({
       title: "Event Created!",
       description: "Your new event has been successfully submitted.",
     });
-    
-    onFinished();
   }
 
   return (
