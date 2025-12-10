@@ -1,3 +1,75 @@
+import Image from 'next/image';
+import { Button } from '@/components/ui/button';
+import { Card, CardContent, CardFooter, CardHeader, CardTitle } from '@/components/ui/card';
+import { PlaceHolderImages } from '@/lib/placeholder-images';
+import Link from 'next/link';
+import { Badge } from '@/components/ui/badge';
+import { ArrowRight } from 'lucide-react';
+
+const featuredEvents = PlaceHolderImages.slice(0, 3);
+
 export default function Home() {
-  return <></>;
+  return (
+    <div className="flex flex-col min-h-screen">
+      <section className="relative w-full h-[60vh] md:h-[70vh] flex items-center justify-center text-center">
+        <Image
+          src="https://picsum.photos/seed/hero/1800/1200"
+          alt="Hero background"
+          fill
+          className="object-cover absolute inset-0 z-0 opacity-20"
+          priority
+          data-ai-hint="technology conference"
+        />
+        <div className="relative z-10 p-4">
+          <h1 className="text-4xl md:text-6xl font-bold tracking-tighter mb-4 text-primary">
+            Find Your Next Challenge
+          </h1>
+          <p className="max-w-2xl mx-auto text-lg md:text-xl text-foreground/80 mb-8">
+            Discover, learn, and compete in the best hackathons and tech events worldwide. Your next big idea starts here.
+          </p>
+          <Button asChild size="lg">
+            <Link href="/events">
+              Explore Events <ArrowRight className="ml-2" />
+            </Link>
+          </Button>
+        </div>
+      </section>
+
+      <section className="py-16 md:py-24">
+        <div className="container mx-auto px-4">
+          <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
+            Featured Hackathons
+          </h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {featuredEvents.map((event) => (
+              <Card key={event.id} className="flex flex-col overflow-hidden hover:shadow-lg hover:shadow-primary/20 transition-shadow duration-300">
+                <CardHeader className="p-0">
+                  <Image
+                    src={event.imageUrl}
+                    alt={event.description}
+                    width={600}
+                    height={400}
+                    className="w-full h-48 object-cover"
+                    data-ai-hint={event.imageHint}
+                  />
+                </CardHeader>
+                <CardContent className="p-6 flex-1">
+                  <CardTitle className="text-xl mb-2">{event.description}</CardTitle>
+                  <div className="flex gap-2 mt-2">
+                    <Badge variant="secondary">Online</Badge>
+                    <Badge variant="secondary">Free</Badge>
+                  </div>
+                </CardContent>
+                <CardFooter className="p-6 pt-0">
+                  <Button asChild className="w-full">
+                    <Link href="#">View Details</Link>
+                  </Button>
+                </CardFooter>
+              </Card>
+            ))}
+          </div>
+        </div>
+      </section>
+    </div>
+  );
 }
