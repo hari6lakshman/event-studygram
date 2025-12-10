@@ -15,14 +15,14 @@
   {
     "id": "2",
     "title": "Sprintathon",
-    "date": "December 10, 2024",
-    "location": "San Francisco, CA",
-    "description": "A high-intensity, 24-hour sprint to build and launch a functional prototype. Speed and execution are key.",
-    "longDescription": "Sprintathon is not for the faint of heart. This is a fast-paced, 24-hour coding marathon where teams race against the clock to turn an idea into a working prototype. If you thrive under pressure and want to test your rapid development skills, this is the event for you. Coffee and energy drinks will be plentiful.",
+    "date": "December 9-10, 2024",
+    "location": "IITM Research Park, Chennai",
+    "description": "A national-level 24-hour hackathon that brings together the brightest minds to solve real-world challenges.",
+    "longDescription": "Sprintathon is a high-intensity, national-level 24-hour hackathon held at IITM Research Park. This event provides a platform for students, developers, and innovators to collaborate, ideate, and build solutions for pressing real-world problems. Participants will get the chance to network with industry experts, win exciting prizes, and bring their innovative ideas to life in a competitive and energetic environment.",
     "imageUrl": "",
     "imageHint": "fast coding stopwatch",
     "organizerId": "1",
-    "tags": ["Prototype", "In-Person", "Intense"]
+    "tags": ["Hackathon", "National Level", "In-Person", "24-Hour"]
   },
   {
     "id": "3",
