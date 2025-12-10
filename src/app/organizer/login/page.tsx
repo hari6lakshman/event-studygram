@@ -45,7 +45,6 @@ export default function OrganizerLoginPage() {
             <Input 
               id="username" 
               type="text" 
-              placeholder="e.g., ecl@123" 
               value={username}
               onChange={(e) => setUsername(e.target.value)}
             />
