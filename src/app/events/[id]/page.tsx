@@ -25,14 +25,6 @@ export default function EventDetailsPage({ params }: { params: { id: string } })
         </Button>
 
         <div className="bg-card rounded-lg shadow-lg overflow-hidden border-4 border-primary">
-          <Image 
-            src={event.imageUrl} 
-            alt={event.title}
-            width={1200}
-            height={600}
-            className="w-full h-64 object-cover"
-            data-ai-hint={event.imageHint}
-          />
           <div className="p-6 md:p-10">
             <h1 className="text-3xl md:text-5xl font-headline font-bold mb-4 text-primary">{event.title}</h1>
             <div className="flex flex-wrap gap-4 items-center mb-6 text-muted-foreground">

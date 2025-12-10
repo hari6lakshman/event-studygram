@@ -36,18 +36,10 @@ export default function Home() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {featuredEvents.map((event) => (
               <Card key={event.id} className="flex flex-col overflow-hidden hover:shadow-lg hover:shadow-primary/20 transition-shadow duration-300 bg-card border-4 border-primary">
-                <CardHeader className="p-0">
-                    <Image 
-                        src={event.imageUrl} 
-                        alt={event.title}
-                        width={600}
-                        height={400}
-                        className="w-full h-48 object-cover"
-                        data-ai-hint={event.imageHint}
-                    />
-                </CardHeader>
-                <CardContent className="p-6 flex-1">
+                <CardHeader>
                   <CardTitle className="text-xl font-headline mb-2">{event.title}</CardTitle>
+                </CardHeader>
+                <CardContent className="p-6 pt-0 flex-1">
                   <p className='text-sm text-muted-foreground'>{event.date}</p>
                   <p className='text-sm text-muted-foreground mb-2'>{event.location}</p>
                   <div className="flex gap-2 mt-2">
