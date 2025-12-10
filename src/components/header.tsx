@@ -14,12 +14,6 @@ export function Header() {
           <Link href="/events" className="transition-colors hover:text-foreground/80 text-foreground/80 font-medium">
             Events
           </Link>
-          <Link href="#" className="transition-colors hover:text-foreground/80 text-foreground/60">
-            About
-          </Link>
-          <Link href="#" className="transition-colors hover:text-foreground/80 text-foreground/60">
-            Contact
-          </Link>
         </nav>
         <div className="flex flex-1 items-center justify-end gap-2">
           <Button variant="ghost" asChild>
