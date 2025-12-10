@@ -2,12 +2,22 @@
 [
     {
         "id": "1",
-        "email": "admin@example.com",
-        "password": "password"
+        "username": "ecl@123",
+        "password": "admin@123"
     },
     {
         "id": "2",
-        "email": "organizer@example.com",
-        "password": "password"
+        "username": "stjosephs@123",
+        "password": "admin@123"
+    },
+    {
+        "id": "3",
+        "username": "saveetha@123",
+        "password": "admin@123"
+    },
+    {
+        "id": "4",
+        "username": "iitm@123",
+        "password": "admin@123"
     }
 ]

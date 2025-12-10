@@ -5,18 +5,17 @@ import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
 import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
-import Link from "next/link"
 import { organizers } from "@/lib/organizers";
 import { useToast } from "@/hooks/use-toast";
 
 export default function OrganizerLoginPage() {
-  const [email, setEmail] = useState("");
+  const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
   const router = useRouter();
   const { toast } = useToast();
 
   const handleLogin = () => {
-    const organizer = organizers.find(o => o.email === email && o.password === password);
+    const organizer = organizers.find(o => o.username === username && o.password === password);
     if (organizer) {
       // In a real app, you'd set up a session. For this prototype, we'll just redirect.
       toast({
@@ -27,7 +26,7 @@ export default function OrganizerLoginPage() {
     } else {
       toast({
         title: "Login Failed",
-        description: "Invalid email or password.",
+        description: "Invalid username or password.",
         variant: "destructive",
       });
     }
@@ -42,13 +41,13 @@ export default function OrganizerLoginPage() {
         </CardHeader>
         <CardContent className="space-y-4">
           <div className="space-y-2">
-            <Label htmlFor="email">Email</Label>
+            <Label htmlFor="username">Username</Label>
             <Input 
-              id="email" 
-              type="email" 
-              placeholder="organizer@example.com" 
-              value={email}
-              onChange={(e) => setEmail(e.target.value)}
+              id="username" 
+              type="text" 
+              placeholder="e.g., ecl@123" 
+              value={username}
+              onChange={(e) => setUsername(e.target.value)}
             />
           </div>
           <div className="space-y-2">
@@ -63,12 +62,6 @@ export default function OrganizerLoginPage() {
         </CardContent>
         <CardFooter className="flex flex-col gap-4">
           <Button className="w-full" onClick={handleLogin}>Log In</Button>
-          <p className="text-sm text-center text-muted-foreground">
-            Don't have an account?{" "}
-            <Link href="/organizer/signup" className="text-primary hover:underline">
-              Sign Up
-            </Link>
-          </p>
         </CardFooter>
       </Card>
     </div>
