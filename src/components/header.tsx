@@ -11,9 +11,9 @@ export function Header() {
           <span className="font-headline font-bold text-lg">Event Hub - Studygram</span>
         </Link>
         <nav className="flex items-center gap-6 text-sm">
-          {/* <Link href="/events" className="transition-colors hover:text-foreground/80 text-foreground/80 font-medium">
+          <Link href="/events" className="transition-colors hover:text-foreground/80 text-foreground/60 font-medium">
             Events
-          </Link> */}
+          </Link>
         </nav>
         <div className="flex flex-1 items-center justify-end gap-2">
           <Button variant="ghost" asChild>
