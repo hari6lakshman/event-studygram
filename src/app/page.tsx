@@ -13,14 +13,6 @@ export default function Home() {
   return (
     <div className="flex flex-col">
       <section className="relative w-full h-[60vh] md:h-[70vh] flex items-center justify-center text-center">
-        <Image
-          src="https://picsum.photos/seed/hero/1800/1200"
-          alt="Hero background"
-          fill
-          className="object-cover absolute inset-0 z-0 opacity-10"
-          priority
-          data-ai-hint="technology conference"
-        />
         <div className="relative z-10 p-4">
           <h1 className="text-4xl md:text-6xl font-headline font-bold tracking-tighter mb-4 text-primary">
             Find Your Next Challenge
