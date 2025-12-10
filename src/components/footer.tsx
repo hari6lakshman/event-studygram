@@ -8,7 +8,7 @@ export function Footer() {
         <div className="flex flex-col md:flex-row justify-between items-center">
           <div className="flex items-center space-x-2 mb-4 md:mb-0">
             <CodeXml className="h-6 w-6 text-primary" />
-            <span className="font-bold text-lg">EventHub</span>
+            <span className="font-headline font-bold text-lg">EventHub</span>
           </div>
           <nav className="flex gap-4 text-sm text-foreground/60">
             <Link href="#" className="hover:text-foreground">About</Link>

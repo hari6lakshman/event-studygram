@@ -23,7 +23,7 @@ export default function EventDetailsPage({ params }: { params: { id: string } })
           </Link>
         </Button>
 
-        <div className="bg-card rounded-lg shadow-lg overflow-hidden">
+        <div className="bg-card rounded-lg shadow-lg overflow-hidden border-primary/40">
           <Image
             src={event.imageUrl}
             alt={event.title}
@@ -33,7 +33,7 @@ export default function EventDetailsPage({ params }: { params: { id: string } })
             data-ai-hint={event.imageHint}
           />
           <div className="p-6 md:p-10">
-            <h1 className="text-3xl md:text-5xl font-bold mb-4 text-primary">{event.title}</h1>
+            <h1 className="text-3xl md:text-5xl font-headline font-bold mb-4 text-primary">{event.title}</h1>
             <div className="flex flex-wrap gap-4 items-center mb-6 text-muted-foreground">
               <span>{event.date}</span>
               <span>&bull;</span>
