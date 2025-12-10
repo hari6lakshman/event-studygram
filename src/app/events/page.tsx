@@ -13,7 +13,7 @@ export default function EventsPage() {
       </h1>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         {events.map((event) => (
-          <Card key={event.id} className="flex flex-col overflow-hidden hover:shadow-lg hover:shadow-primary/20 transition-shadow duration-300 bg-card border-2 border-primary/40">
+          <Card key={event.id} className="flex flex-col overflow-hidden hover:shadow-lg hover:shadow-primary/20 transition-shadow duration-300 bg-card border-4 border-primary">
             <CardHeader className="p-0">
               <Image
                 src={event.imageUrl}
