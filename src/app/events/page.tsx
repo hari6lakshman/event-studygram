@@ -4,6 +4,7 @@ import { Card, CardContent, CardFooter, CardHeader, CardTitle } from '@/componen
 import Link from 'next/link';
 import { Badge } from '@/components/ui/badge';
 import { events } from '@/lib/events';
+import Image from 'next/image';
 
 export default function EventsPage() {
   return (
@@ -14,6 +15,16 @@ export default function EventsPage() {
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         {events.map((event) => (
           <Card key={event.id} className="flex flex-col overflow-hidden hover:shadow-lg hover:shadow-primary/20 transition-shadow duration-300 bg-card border-4 border-primary">
+            <CardHeader className="p-0">
+                <Image 
+                    src={event.imageUrl} 
+                    alt={event.title}
+                    width={600}
+                    height={400}
+                    className="w-full h-48 object-cover"
+                    data-ai-hint={event.imageHint}
+                />
+            </CardHeader>
             <CardContent className="p-6 flex-1">
               <CardTitle className="text-xl font-headline mb-2">{event.title}</CardTitle>
               <p className='text-sm text-muted-foreground'>{event.date}</p>

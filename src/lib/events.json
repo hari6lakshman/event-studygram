@@ -7,7 +7,7 @@
     "location": "St. Joseph's College of Engineering, Chennai",
     "description": "A 24-hour national-level hackathon as part of the Jet'25 technical symposium. A platform for students to showcase their innovative ideas.",
     "longDescription": "Participate in Hackathon 360 2.0, a premier 24-hour national-level coding competition hosted by St. Joseph's College of Engineering, Chennai. As a key event of the Jet'25 technical symposium, this hackathon invites students from across the country to solve real-world problems, innovate, and showcase their technical prowess. It's an opportunity to collaborate, learn from peers, and win exciting prizes.",
-    "imageUrl": "",
+    "imageUrl": "https://picsum.photos/seed/1/600/400",
     "imageHint": "coding collaboration",
     "organizerId": "1",
     "tags": ["Hackathon", "National Level", "In-Person", "24-Hour"]
@@ -19,7 +19,7 @@
     "location": "IITM Research Park, Chennai",
     "description": "A national-level 24-hour hackathon that brings together the brightest minds to solve real-world challenges.",
     "longDescription": "Sprintathon is a high-intensity, national-level 24-hour hackathon held at IITM Research Park. This event provides a platform for students, developers, and innovators to collaborate, ideate, and build solutions for pressing real-world problems. Participants will get the chance to network with industry experts, win exciting prizes, and bring their innovative ideas to life in a competitive and energetic environment.",
-    "imageUrl": "",
+    "imageUrl": "https://picsum.photos/seed/2/600/400",
     "imageHint": "fast coding stopwatch",
     "organizerId": "2",
     "tags": ["Hackathon", "National Level", "In-Person", "24-Hour"]
@@ -31,7 +31,7 @@
     "location": "Saveetha Engineering College, Chennai",
     "description": "A collaborative event focused on building open-source tools for social good. Contribute to meaningful projects.",
     "longDescription": "Join the Build-a-thon and use your skills to make a difference. This event brings together developers to contribute to open-source projects that address social and environmental challenges. It's less of a competition and more of a collaboration, with a focus on learning, community, and impact.",
-    "imageUrl": "",
+    "imageUrl": "https://picsum.photos/seed/3/600/400",
     "imageHint": "community building teamwork",
     "organizerId": "3",
     "tags": ["Open Source", "Social Good", "Collaboration"]
